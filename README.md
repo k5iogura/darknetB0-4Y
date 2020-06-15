@@ -10,6 +10,6 @@ EfficientNetB0 for classifier(AKA Backbone) and 4 YOLO Layers for detector on da
 
 The original [cfg](./cfg/enet-coco.cfg) which on [AlexeyAB](https://github.com/AlexeyAB/darknet) includes 2 YOLO Layers as detector.  
 
-**original [to](./README.md.orig)**  
+**original [to](./README.orig.md)**  
 
 

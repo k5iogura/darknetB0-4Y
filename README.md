@@ -40,11 +40,11 @@ names   = data/coco.names
 backup  = backup4y2
 ```
 
-- download backbone weights enetb0_final.weights  
+- download backbone weights 'enetb0_final.weights' [from Website](https://github.com/WongKinYiu/CrossStagePartialNetworks)  
 
 - start training  
 ```
-$ ./darknet detector coco.data cfg/enet4y2-coco.cfg enetb0_final.weights  
+$ ./darknet detector train coco.data cfg/enet4y2-coco.cfg enetb0_final.weights  
 ```
 Unfortunately wait 20days even if V100 GPGPU.  
 

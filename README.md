@@ -110,6 +110,7 @@ loss range: 3002.268311 to 3.872015
 MIN   277615     3.872015 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 -----------------------------------------------------------------------------------------------------------
 ```
+watch -n 5 'avgout.py log' script is easy way to check status of training everyday.  
 
 ## Getting start from scratch without pre-trained backbone, read [next](./README.classifier.md)  
 

@@ -13,14 +13,7 @@ enet4y2 and the original enet-coco have same backbone classifier therefore use [
 
 **original [README](./README.orig.md)**  
 
-## Object Detector  
-
-Provide set of cfg and script for object detection and classification tasks.  
-
-- object detection : with COCO dataset  
-  get_coco_dataset.sh  
-  coco.data  
-- classification : with images in ImageNet urls related to VOC 20 classes  
+## Object Detector from Dataset download until estimation mAP  
 
 ### Download Dataset  
 

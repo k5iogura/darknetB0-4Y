@@ -4,7 +4,7 @@ EfficientNetB0 for classifier(AKA Backbone) and 4 YOLO Layers for detector on da
 - [enet4y2](./cfg/enet4y2-coco.cfg) with 4.146BFlops to calculate convolution layers  
 - 20MB weights file size  
 - 20days @ V100 GPU for taining with COCO  
-- 47.1 mAP50 with COCO  
+- 47.1 mAP50 with COCO 5K  
 ```
 ```
 

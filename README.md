@@ -5,8 +5,8 @@ EfficientNetB0 for classifier(AKA Backbone) and 4 YOLO Layers for detector on da
 - 20MB weights file size  
 - 20days @ V100 GPU for taining with COCO  
 - 47.1 mAP50 with COCO 5K  
-```
-```
+
+[enet4y2 network structure](./files/enet4y2-coco.png)  
 
 The original [cfg](./cfg/enet-coco.cfg) which on [AlexeyAB](https://github.com/AlexeyAB/darknet) includes 2 YOLO Layers as detector.  
 enet4y2 and the original enet-coco have same backbone classifier therefore use [same backbone weights](https://github.com/WongKinYiu/CrossStagePartialNetworks).  

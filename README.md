@@ -6,7 +6,8 @@ EfficientNetB0 for classifier(AKA Backbone) and 4 YOLO Layers for detector on da
 - 20days @ V100 GPU for taining with COCO  
 - 47.1 mAP50 with COCO 5K  
 
-**enet4y2 network structure**
+**enet4y2 network structure**  
+
 ![](./files/enet4y2-coco.png)  
 
 The original [cfg](./cfg/enet-coco.cfg) which on [AlexeyAB](https://github.com/AlexeyAB/darknet) includes 2 YOLO Layers as detector.  

@@ -82,7 +82,7 @@ $ ./scripts/pycocoeval.py -r results/coco_results.json -g work2/coco/annotations
 ```
 
 **progress bar while training**  
-can see progress bar with ./scripts/avgout.py like below,  
+can see training progress bar with ./scripts/avgout.py like below,  
 ```
 loss range: 3002.268311 to 3.872015
 -----------------------------------------------------------------------------------------------------------

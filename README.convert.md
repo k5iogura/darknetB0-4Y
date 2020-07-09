@@ -1,9 +1,16 @@
 # Convertion from darknet to pytorch and tensorflow  
 ### Folowing [This web pages](https://github.com/ultralytics/yolov3#darknet-conversion)  
 
-prepaire packages for python3 according to own conditons,  
+install torch following [pytorch](https://pytorch.org/get-started/locally/),  
 ```
- $ python3 -m pip install torch torchvision opencv-python tqdm
+ $ python3 -m pip install torch==1.5.1+cu92 torchvision==0.6.1+cu92 -f https://download.pytorch.org/whl/torch_stable.html
+ $ python3 -c "import torch;print(torch.cuda.is_available())"
+ True
+```
+
+prepaire miscellaneous packages for python3 according to own conditons,  
+```
+ $ python3 -m pip install opencv-python tqdm
 ```
 
 flowing operations of web,  

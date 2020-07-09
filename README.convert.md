@@ -1,7 +1,7 @@
 # Convertion from darknet to pytorch and tensorflow  
 ### Folowing [This web pages](https://github.com/ultralytics/yolov3#darknet-conversion)  
 
-install torch following [pytorch](https://pytorch.org/get-started/locally/),  
+install torch following [pytorch](https://pytorch.org/get-started/locally/) for CUDA9.2,  
 ```
  $ python3 -m pip install torch==1.5.1+cu92 torchvision==0.6.1+cu92 -f https://download.pytorch.org/whl/torch_stable.html
  $ python3 -c "import torch;print(torch.cuda.is_available())"

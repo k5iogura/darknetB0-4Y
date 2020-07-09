@@ -13,3 +13,8 @@ flowing operations of web,
 Success: converted 'weights/yolov3-spp.weights' to 'weights/yolov3-spp.pt'
 ```
 
+Testing for coco/5k.txt.  
+prepaire coco dataset for test, write 5k.txt and,  
+```
+ $ python3 test.py --cfg yolov3-spp.cfg --weights yolov3-spp-ultralytics.pt --img 640 --augment
+```

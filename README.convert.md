@@ -1,7 +1,7 @@
 # Convertion from darknet to pytorch and tensorflow  
-### See (This web pages)[https://github.com/ultralytics/yolov3#darknet-conversion]  
+### Folowing [This web pages](https://github.com/ultralytics/yolov3#darknet-conversion)  
 
-prepaire packages for python3,  
+prepaire packages for python3 according to own conditons,  
 ```
  $ python3 -m pip install torch torchvision opencv-python tqdm
 ```

@@ -2,6 +2,7 @@
 
 EfficientNetB0 for classifier(AKA Backbone) and 4 YOLO Layers + BiFPN for detector on darknet Framework.  
 - [enet4y2bifpn](./cfg/enet4y2bifpn-coco.cfg) with 4.364 to calculate convolution layers  
+- [enet4y2bifpn] has Bidirectional Feature Pylamid Network
 - 20MB weights file size  
 - 20days @ V100 GPU for taining with COCO  
 - 49.5 mAP50 with COCO 5K  
@@ -31,7 +32,7 @@ $ ./scripts/get_coco_dataset.sh
 This weights of classifier may be generated for [Cross Stage Partial Networks](https://github.com/WongKinYiu/CrossStagePartialNetworks).  
 
 **[enet4y2bifpn-coco weights](./backup4y2/enet4y2bifpn-coco-bigBatch_final.weights)**  
-This weights of detector is generated for [enet4y2-coco.cfg](cfg/enet4y2-coco.cfg).  
+This weights of detector is generated for [enet4y2bifpn-coco.cfg]((./cfg/enet4y2bifpn-coco.cfg).  
 
 - write coco.data  
 ```
@@ -65,7 +66,7 @@ Unfortunately wait 20days even if V100 GPGPU.
 **enet4y2bifpn-coco.cfg pycocotools details**  
 
 ```
-$ ./darknet detector map coco.data cfg/enet4y2-coco.cfg backup4y2/enet4y2-coco_final.weights
+$ ./darknet detector map coco.data cfg/enet4y2bifpn-coco.cfg backup4y2/enet4y2bifpn-coco-bigBatch_final.weights
 $ ./scripts/pycocoeval.py -r results/coco_results.json -g work2/coco/annotations/instances_val2014.json
 
 0.25474642780790624

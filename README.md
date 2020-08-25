@@ -58,7 +58,7 @@ Unfortunately wait 20days even if V100 GPGPU.
 
 | /                 | AP50-95 | AP50     | AP75     | Small     | Medium  | Large     | Judgement |
 |-                  |-:       |-:        |-:        |-:         |-:       |-:         |-:         |
-|enet-coco          |0.240    |0.452     |**0.231** |0.086      |0.260    |**0.369**  |criterion  |
+|enet-coco          |0.240    |0.452     |0.231     |0.086      |0.260    |**0.369**  |criterion  |
 |enet4y2-coco       |0.236    |**0.471** |0.213     |**0.091**  |0.258    |0.339      |target     |
 |enet4y2bifpn-coco  |**0.255**|**0.495** |**0.241** |**0.099**  |**0.279**|0.363      |target     |
 |                   |win      |win       |win       |win        |win      |lose       |result     |

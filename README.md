@@ -83,3 +83,6 @@ $ ./scripts/pycocoeval.py -r results/coco_results.json -g work2/coco/annotations
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.515
 ```
 
+## FPN Version, read [next](./README.fpn.md)  
+## Getting start from scratch without pre-trained backbone, read [next](./README.classifier.md)  
+## Convertion from darknet to pytorch and tensorflow [next](./README.convert.md)  

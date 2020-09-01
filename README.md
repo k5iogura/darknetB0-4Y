@@ -17,7 +17,7 @@ enet4y2bifpn and the original enet-coco have same backbone classifier therefore 
 
 **original [README](./README.orig.md)**  
 
-## Object Detector from Dataset download until estimation mAP  
+## Object Detector setup from Dataset download until estimation mAP  
 
 ### Download Dataset  
 
@@ -92,6 +92,7 @@ $ ./scripts/pycocoeval.py -r results/coco_results.json -g work2/coco/annotations
 **Summary via darknet map**  
 
 | /                 | AP50    |
+|-                  |-:       |
 |enet4y2-voc        |0.792    |
 |enet4y2bifpn-voc   |**0.810**|
 

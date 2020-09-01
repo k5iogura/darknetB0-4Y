@@ -95,9 +95,9 @@ $ ./scripts/pycocoeval.py -r results/coco_results.json -g work2/coco/annotations
 
 | /                 | AP50    |Comments |
 |-                  |-:       |-:       |
-|enet-voc           |0.804    |[criterion](./backup4y2VOC/enet-voc_best.weights)  |
-|enet4y2-voc        |0.792    |[target](./backup4y2VOC/enet4y2-voc_best.weights)  |
-|enet4y2bifpn-voc   |**0.810**|target   |
+|enet-voc           |0.804    |[criterion](./backup4y2VOC/enet-voc_best.weights)        |
+|enet4y2-voc        |0.792    |[target](./backup4y2VOC/enet4y2-voc_best.weights)        |
+|enet4y2bifpn-voc   |**0.810**|[target](./backup4y2VOC/enet4y2bifpn-voc_best.weights)   |
 
 ```
 ./darknet detector map voc.data cfg/enet4y2bifpn-voc.cfg backup4y2VOC/enet4y2-voc_best.weights

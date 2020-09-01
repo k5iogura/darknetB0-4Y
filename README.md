@@ -2,7 +2,7 @@
 
 EfficientNetB0 for classifier(AKA Backbone) and 4 YOLO Layers + BiFPN for detector on darknet Framework.  
 - [enet4y2bifpn](./cfg/enet4y2bifpn-coco.cfg) with 4.364 to calculate convolution layers  
-- [enet4y2bifpn] has Bidirectional Feature Pylamid Network
+- [enet4y2bifpn](./cfg/enet4y2bifpn-coco.cfg) has Bidirectional Feature Pylamid Network
 - 20MB weights file size  
 - 20days @ V100 GPU for taining with COCO  
 - 49.5 mAP50 with COCO 5K  
@@ -53,13 +53,15 @@ $ ./darknet detector train coco.data cfg/enet4y2bifpn-coco.cfg enetb0_final.weig
 ```
 Unfortunately wait 20days even if V100 GPGPU.  
 
-### enet4y2bifpn-coco estimation mAP against enet-coco(detector as reference)  
+### [enet4y2bifpn-coco](./cfg/enet4y2bifpn-coco-bigBatch.cfg) estimation mAP against enet-coco(detector as reference)  
+
+*Notice:using 64batch size*  
 
 **Summary via pycocotools**  
 
 | /                 | AP50-95 | AP50     | AP75     | Small     | Medium  | Large     | Judgement |
 |-                  |-:       |-:        |-:        |-:         |-:       |-:         |-:         |
-|enet-coco          |0.240    |0.452     |0.231     |0.086      |0.260    |**0.369**  |criterion  |
+|enet-coco          |0.240    |0.452     |0.231     |0.086      |0.260    |**0.369**  |[criterion](./backup4y2/enetb0-coco_final.weights)  |
 |enet4y2-coco       |0.236    |**0.471** |0.213     |**0.091**  |0.258    |0.339      |target     |
 |enet4y2bifpn-coco  |**0.255**|**0.495** |**0.241** |**0.099**  |**0.279**|0.363      |target     |
 |                   |win      |win       |win       |win        |win      |lose       |result     |  
@@ -85,7 +87,7 @@ $ ./scripts/pycocoeval.py -r results/coco_results.json -g work2/coco/annotations
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.515
 ```
 
-### enet4y2bifpn-voc estimation mAP as additional information  
+### [enet4y2bifpn-voc](./cfg/enet4y2bifpn-voc.cfg) estimation mAP as additional information  
 
 **[enet4y2bifpn-voc weights](./backup4y2VOC/enet4y2bifpn-voc_best.weights)**  
 

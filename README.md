@@ -62,8 +62,8 @@ Unfortunately wait 20days even if V100 GPGPU.
 | /                 | AP50-95 | AP50     | AP75     | Small     | Medium  | Large     | Judgement |
 |-                  |-:       |-:        |-:        |-:         |-:       |-:         |-:         |
 |enet-coco          |0.240    |0.452     |0.231     |0.086      |0.260    |**0.369**  |[criterion](./backup4y2/enetb0-coco_final.weights)  |
-|enet4y2-coco       |0.236    |**0.471** |0.213     |**0.091**  |0.258    |0.339      |target     |
-|enet4y2bifpn-coco  |**0.255**|**0.495** |**0.241** |**0.099**  |**0.279**|0.363      |target     |
+|enet4y2-coco       |0.236    |**0.471** |0.213     |**0.091**  |0.258    |0.339      |[target](./backup4y2/enet4y2-coco_final.weights)    |
+|enet4y2bifpn-coco  |**0.255**|**0.495** |**0.241** |**0.099**  |**0.279**|0.363      |[target](./backup4y2/enet4y2bifpn-coco-bigBatch_final.weights)     |
 |                   |win      |win       |win       |win        |win      |lose       |result     |  
 
 **enet4y2bifpn-coco.cfg pycocotools details**  

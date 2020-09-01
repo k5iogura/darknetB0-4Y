@@ -93,10 +93,11 @@ $ ./scripts/pycocoeval.py -r results/coco_results.json -g work2/coco/annotations
 
 **Summary via darknet map**  
 
-| /                 | AP50    |
-|-                  |-:       |
-|enet4y2-voc        |0.792    |
-|enet4y2bifpn-voc   |**0.810**|
+| /                 | AP50    |Comments |
+|-                  |-:       |-:       |
+|enet-voc           |         |[criterion](./backup4y2VOC/enet-voc_best.weights)  |
+|enet4y2-voc        |0.792    |[target](./backup4y2VOC/enet4y2-voc_best.weights)  |
+|enet4y2bifpn-voc   |**0.810**|target   |
 
 ```
 ./darknet detector map voc.data cfg/enet4y2bifpn-voc.cfg backup4y2VOC/enet4y2-voc_best.weights
